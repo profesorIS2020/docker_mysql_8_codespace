@@ -1,5 +1,5 @@
 {
-  "name": "MySQL Codespace",
+  "name": "MySQL para Estudiantes",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -8,20 +8,8 @@
       "version": "latest"
     }
   },
-  // Eliminamos el mount manual y los comandos de chown/usermod innecesarios
-  // La Feature de docker-in-docker ya gestiona los permisos del grupo 'docker'
   "remoteUser": "vscode",
-  "forwardPorts": [3306],
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-azuretools.vscode-docker",
-        "mtxr.sqltools",
-        "mtxr.sqltools-driver-mysql"
-      ]
-    }
-  }
+  "forwardPorts": [3306]
 }
-
 
 
